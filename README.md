@@ -31,3 +31,12 @@ class Score extends React.component{
   }
 }
 ```
+
+### 5 React and Webpack
+```
+"scripts":{
+  "start":"webpack-dev-server --inline --output-public-path '/public/js/build'",
+  "build":"webpack -p",
+  "test":"echo \"error\" && exit 1"
+}
+```
