@@ -16,12 +16,12 @@ class Score extends React.component{
     this.state={score:0};
   }
   incrementScore(){
-    console.log('increase');
+    this.setState({score:this.state.score+1;})
   }
   render(){
     return(
       <div>
-      Score:
+      Score:{this.state.score}
         <button onClick={this.incrementScore}>+</button>
         <button>-</button>
       </div>
