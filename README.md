@@ -14,6 +14,8 @@ class Score extends React.component{
   cpmstructor(props){
     super(props);
     this.state={score:0};
+    this.incrementScore = this.increment.bind(this);
+    
   }
   incrementScore(){
     this.setState({score:this.state.score+1;})
